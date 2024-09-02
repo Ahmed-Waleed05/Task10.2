@@ -16,6 +16,7 @@ void main() {
     while(1)
     {
        int value= adc_run();
+       
        ti_run(value);
        int rpm = calculate_RPM(); 
         SPI_send(rpm  & 0xFF);
