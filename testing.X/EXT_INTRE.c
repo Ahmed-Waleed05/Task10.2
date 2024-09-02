@@ -13,5 +13,5 @@ ISR(INT0_vect) {
 }
 
 ISR(INT1_vect) {
-    count--;
+    count++;
 }

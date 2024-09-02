@@ -7,8 +7,6 @@ int calculate_RPM();
 
 void main() {
     
-    char rpm_string[RPM_BUFFER_SIZE];
-    
     ADC_INIT();
     TIMER_INIT();
     SPI_init();
@@ -17,7 +15,7 @@ void main() {
     
     while(1)
     {
-       int value= adc_run(0);
+       int value= adc_run();
        ti_run(value);
        int rpm = calculate_RPM(); 
         SPI_send(rpm  & 0xFF);
