@@ -1,4 +1,5 @@
-build/default/debug/main.o.d build/default/debug/main.o: main.c \
+build/default/debug/main.o.d build/default/debug/main.o: main.c GPIO.h \
+ TIMER.h \
  c:\program\ files\microchip\xc8\v2.50\avr\lib\gcc\avr\5.4.0\include\xc.h \
  c:\program\ files\microchip\xc8\v2.50\avr\lib\gcc\avr\5.4.0\include\cci.h \
  c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\io.h \
@@ -15,10 +16,15 @@ build/default/debug/main.o.d build/default/debug/main.o: main.c \
  c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\fuse.h \
  c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\lock.h \
  c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\builtins.h \
+ ADC.h SPI.h EXT_INTRE.h \
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\interrupt.h \
  c:\program\ files\microchip\xc8\v2.50\avr\avr\include\util\delay.h \
  c:\program\ files\microchip\xc8\v2.50\avr\avr\include\util\delay_basic.h \
- c:\program\ files\microchip\xc8\v2.50\avr\avr\include\math.h GPIO.h \
- TIMER.h ADC.h SPI.h
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\math.h
+
+GPIO.h:
+
+TIMER.h:
 
 c:\program\ files\microchip\xc8\v2.50\avr\lib\gcc\avr\5.4.0\include\xc.h:
 
@@ -52,16 +58,16 @@ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\lock.h:
 
 c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\builtins.h:
 
+ADC.h:
+
+SPI.h:
+
+EXT_INTRE.h:
+
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\interrupt.h:
+
 c:\program\ files\microchip\xc8\v2.50\avr\avr\include\util\delay.h:
 
 c:\program\ files\microchip\xc8\v2.50\avr\avr\include\util\delay_basic.h:
 
 c:\program\ files\microchip\xc8\v2.50\avr\avr\include\math.h:
-
-GPIO.h:
-
-TIMER.h:
-
-ADC.h:
-
-SPI.h:

@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=GPIO.c main.c TIMER.c ADC.c SPI.c
+SOURCEFILES_QUOTED_IF_SPACED=GPIO.c main.c TIMER.c ADC.c SPI.c EXT_INTRE.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/GPIO.o ${OBJECTDIR}/main.o ${OBJECTDIR}/TIMER.o ${OBJECTDIR}/ADC.o ${OBJECTDIR}/SPI.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/GPIO.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/TIMER.o.d ${OBJECTDIR}/ADC.o.d ${OBJECTDIR}/SPI.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/GPIO.o ${OBJECTDIR}/main.o ${OBJECTDIR}/TIMER.o ${OBJECTDIR}/ADC.o ${OBJECTDIR}/SPI.o ${OBJECTDIR}/EXT_INTRE.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/GPIO.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/TIMER.o.d ${OBJECTDIR}/ADC.o.d ${OBJECTDIR}/SPI.o.d ${OBJECTDIR}/EXT_INTRE.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/GPIO.o ${OBJECTDIR}/main.o ${OBJECTDIR}/TIMER.o ${OBJECTDIR}/ADC.o ${OBJECTDIR}/SPI.o
+OBJECTFILES=${OBJECTDIR}/GPIO.o ${OBJECTDIR}/main.o ${OBJECTDIR}/TIMER.o ${OBJECTDIR}/ADC.o ${OBJECTDIR}/SPI.o ${OBJECTDIR}/EXT_INTRE.o
 
 # Source Files
-SOURCEFILES=GPIO.c main.c TIMER.c ADC.c SPI.c
+SOURCEFILES=GPIO.c main.c TIMER.c ADC.c SPI.c EXT_INTRE.c
 
 
 
@@ -118,6 +118,12 @@ ${OBJECTDIR}/SPI.o: SPI.c  .generated_files/flags/default/cba44921dc66259427dd39
 	@${RM} ${OBJECTDIR}/SPI.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem     -MD -MP -MF "${OBJECTDIR}/SPI.o.d" -MT "${OBJECTDIR}/SPI.o.d" -MT ${OBJECTDIR}/SPI.o -o ${OBJECTDIR}/SPI.o SPI.c 
 	
+${OBJECTDIR}/EXT_INTRE.o: EXT_INTRE.c  .generated_files/flags/default/f1f87162e40d423aea30d3dd7a2d0a70ae7067f4 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/EXT_INTRE.o.d 
+	@${RM} ${OBJECTDIR}/EXT_INTRE.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1 -g -DDEBUG  -gdwarf-2  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem     -MD -MP -MF "${OBJECTDIR}/EXT_INTRE.o.d" -MT "${OBJECTDIR}/EXT_INTRE.o.d" -MT ${OBJECTDIR}/EXT_INTRE.o -o ${OBJECTDIR}/EXT_INTRE.o EXT_INTRE.c 
+	
 else
 ${OBJECTDIR}/GPIO.o: GPIO.c  .generated_files/flags/default/f217c15a87435f9e30e7b06efa7c52ed77cb7887 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
@@ -148,6 +154,12 @@ ${OBJECTDIR}/SPI.o: SPI.c  .generated_files/flags/default/9c73511f48709c4057c9d5
 	@${RM} ${OBJECTDIR}/SPI.o.d 
 	@${RM} ${OBJECTDIR}/SPI.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem     -MD -MP -MF "${OBJECTDIR}/SPI.o.d" -MT "${OBJECTDIR}/SPI.o.d" -MT ${OBJECTDIR}/SPI.o -o ${OBJECTDIR}/SPI.o SPI.c 
+	
+${OBJECTDIR}/EXT_INTRE.o: EXT_INTRE.c  .generated_files/flags/default/546f987d16bcc90b1091e44ddcda6877e1e9a4d5 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/EXT_INTRE.o.d 
+	@${RM} ${OBJECTDIR}/EXT_INTRE.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -x c -D__$(MP_PROCESSOR_OPTION)__   -mdfp="${DFP_DIR}/xc8"  -Wl,--gc-sections -O1 -ffunction-sections -fdata-sections -fshort-enums -fno-common -funsigned-char -funsigned-bitfields -Wall -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD)  -gdwarf-3 -mno-const-data-in-progmem     -MD -MP -MF "${OBJECTDIR}/EXT_INTRE.o.d" -MT "${OBJECTDIR}/EXT_INTRE.o.d" -MT ${OBJECTDIR}/EXT_INTRE.o -o ${OBJECTDIR}/EXT_INTRE.o EXT_INTRE.c 
 	
 endif
 

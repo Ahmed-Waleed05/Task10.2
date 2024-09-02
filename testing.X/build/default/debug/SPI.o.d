@@ -15,7 +15,7 @@ build/default/debug/SPI.o.d build/default/debug/SPI.o: SPI.c \
  c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\fuse.h \
  c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\lock.h \
  c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\builtins.h \
- SPI.h
+ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\stdio.h SPI.h
 
 c:\program\ files\microchip\xc8\v2.50\avr\lib\gcc\avr\5.4.0\include\xc.h:
 
@@ -48,5 +48,7 @@ c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\fuse.h:
 c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\lock.h:
 
 c:\program\ files\microchip\xc8\v2.50\avr\avr\include\avr\builtins.h:
+
+c:\program\ files\microchip\xc8\v2.50\avr\avr\include\stdio.h:
 
 SPI.h:
