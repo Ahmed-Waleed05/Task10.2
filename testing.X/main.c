@@ -20,18 +20,15 @@ void main() {
        int value= adc_run(0);
        ti_run(value);
        int rpm = calculate_RPM(); 
-        //SPI_send(rpm  & 0xFF);
-        //SPI_send(rpm >> 8);  
-       
-       rpm_to_string(rpm, rpm_string); // Convert RPM to string
-        SPI_send_string(rpm_string); // Send RPM string over SPI
+        SPI_send(rpm  & 0xFF);
+        SPI_send(rpm >> 8);
        
         _delay_ms(500);
     }
 }
 int calculate_RPM() {
     static int last_count = 0;
-    int rpm = ((count - last_count) * 60)/24;
+    int rpm = ((count - last_count) * 120)/24;
     last_count = count;
     return rpm;
 }
